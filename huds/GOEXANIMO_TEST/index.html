@@ -553,7 +553,7 @@
 			<div class="bar1">
 				<div class="hp_bar">
 					<div class="hp_el" id="hp_p">100</div>
-					<div class="bar_username" id="bar_username">undefined</div>
+					<div class="bar_username" id="bar_username">undefinedundefineddslksg</div>
 					<div class="bar_weapon t" id="weapon_icon"></div>
 				</div>
 				<div class="stat_t">
@@ -634,3 +634,10 @@
 	</div>
 
 </section>
+
+<script>
+	var playerName = document.getElementsByClassName('bar_username');
+	if (playerName.length > 10) {
+	    playerName.style.fontSize = "80%";
+	} // to do: make a proper script by using the given idea
+</script>
