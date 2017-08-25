@@ -937,7 +937,7 @@
 	
 	#sponsors_bg {
 		width: 100%;
-		margin-top: 10px;
+		margin-top: 40px;
 		height: 55px;
 		background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
 	}
@@ -1085,3 +1085,11 @@
 		width: 200px;
 		/*transform: skewX(40deg);*/
 	}
+	.sponsors_main{
+		background: url('sponsors/zowie.png');
+		float: left;
+		display: inline;
+		height: 85%;
+		width: auto;
+	}
+	
