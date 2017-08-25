@@ -638,11 +638,19 @@ var obs_stats = observed.getStats();
 		givedrops = true;
 	}
 	if(data.info.phase_countdowns){
-		if(data.info.phase_countdowns.phase == "live" || data.info.phase_countdowns.phase == "over" || data.info.phase_countdowns.phase == "warmup"){
+		if(data.info.phase_countdowns.phase == "live" || data.info.phase_countdowns.phase == "warmup"){
 			$("#time_counter").css("color", "white");
-		} else if(data.info.phase_countdowns.phase == "bomb" || data.info.phase_countdowns.phase == "paused"){
+		} else if(data.info.phase_countdowns.phase == "bomb"){
+			$("#time_counter").css("color", "GoldenRod");
+		} else if(data.info.phase_countdowns.phase == "paused"){
 			$("#time_counter").css("color", "red");
-		} else if(data.info.phase_countdowns.phase == "freezetime"){
+		} else if(data.info.phase_countdowns.phase == "defuse"){
+			$("#time_counter").css("color", "DodgerBlue");
+		} else if(data.info.phase_countdowns.phase == "over"){
+			$("#time_counter").css("color", "green");
+		}
+		
+		else if(data.info.phase_countdowns.phase == "freezetime"){
 			if(data.info.phase_countdowns.phase_ends_in > 10){
 				$("#time_counter").css("color", "white");
 			} else {

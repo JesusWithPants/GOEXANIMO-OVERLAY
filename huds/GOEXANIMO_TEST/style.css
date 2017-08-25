@@ -943,11 +943,11 @@ padding-right:10px;
 }
 
 #sponsors_bg img {
-	width: 90px;
+	width: auto;
 	height: 55px;
 	float: left;
 	display: inline;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 #team_name{
