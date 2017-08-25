@@ -356,12 +356,19 @@ var obs_stats = observed.getStats();
 	$("#nades").html("");
 	if(observed.name){
 		
+			if(team_ct.name===undefined){
+			var ctname="Counter-Terrorists";}
+			else{ ctname=team_ct.name;}
+			
+			if(team_t.name===undefined){
+			var tname="Terrorists";}
+			else{ tname=team_t.name;}
 		 var team = observed.team;
 		 
 		 if(team=="CT"){
-		 var teamname = team_ct.name;}
+		 var teamname = ctname;}
 		 else{
-		 var teamname = team_t.name;}
+		 var teamname = tname;}
 		
 		$("#current_nick").html(observed.name)
 		$("#nick_also").html(teamname + " ");
@@ -439,31 +446,39 @@ var obs_stats = observed.getStats();
 			//COLORS
 			if(obs_sl >= 1 && obs_sl <= 5){
 			
+			if(team_ct.name===undefined){
+			var ctname="Counter-Terrorists";}
+			else{ ctname=team_ct.name;}
+			
+			if(team_t.name===undefined){
+			var tname="Terrorists";}
+			else{ tname=team_t.name;}
+			
 				if(real_side == "ct"){
-					$(".round_team_1_name").html(team_ct.name);
-					$(".round_team_2_name").html(team_t.name);
+					$(".round_team_1_name").html(ctname);
+					$(".round_team_2_name").html(tname);
 					$(".round_team_1_name").css("color", "#5788a8");
 					$(".round_team_2_name").css("color", "#c19511");
 					$("#team_2").css("color", "#c19511");
 					$("#team_1").css("color", "#5788a8");
 					$(".st_left .adr_bar").css("background", "linear-gradient(to left, #3498db, #5788a8)");
 					$(".st_right .adr_bar").css("background", "linear-gradient(to left, #c19511, #f7bf16)");
-					$("#team_1 #team_name").html(team_ct.name);
+					$("#team_1 #team_name").html(ctname);
 					$("#team_1 #team_score").html(team_ct.score);
-					$("#team_2 #team_name").html(team_t.name);
+					$("#team_2 #team_name").html(tname);
 					$("#team_2 #team_score").html(team_t.score);
 				} else {
-					$(".round_team_1_name").html(team_t.name);
-					$(".round_team_2_name").html(team_ct.name);
+					$(".round_team_1_name").html(tname);
+					$(".round_team_2_name").html(ctname);
 					$(".round_team_2_name").css("color", "#5788a8");
 					$(".round_team_1_name").css("color", "#c19511");
 					$("#team_1").css("color", "#c19511");
 					$("#team_2").css("color", "#5788a8");
 					$(".st_right .adr_bar").css("background", "linear-gradient(to left, #3498db, #5788a8)");
 					$(".st_left .adr_bar").css("background", "linear-gradient(to left, #c19511, #f7bf16)");
-					$("#team_2 #team_name").html(team_ct.name);
+					$("#team_2 #team_name").html(ctname);
 					$("#team_1 #team_score").html(team_ct.score);
-					$("#team_1 #team_name").html(team_t.name);
+					$("#team_1 #team_name").html(tname);
 					$("#team_1 #team_score").html(team_t.score);
 				}
 				team_money.first += stats.money;
@@ -472,36 +487,36 @@ var obs_stats = observed.getStats();
 				if(added.first >= 5){
 					$("#team_money_1").html("$" + team_money.first);
 					$("#eq_money_1").html("$" + eq_money.first);
-					//$("#team_1 #team_name").html(team_ct.name);
+					//$("#team_1 #team_name").html(ctname);
 					//$("#team_1 #team_score").html(tscore[left.toLowerCase()]);
 
 				} 
 			}else if((obs_sl >= 6 && obs_sl <= 10) || obs_sl == 0) {
 				if(real_side != "ct"){
-					$(".round_team_1_name").html(team_ct.name);
-					$(".round_team_2_name").html(team_t.name);
+					$(".round_team_1_name").html(ctname);
+					$(".round_team_2_name").html(tname);
 					$(".round_team_1_name").css("color", "#5788a8");
 					$(".round_team_2_name").css("color", "#c19511");
 					$("#team_2").css("color", "#c19511");
 					$("#team_1").css("color", "#5788a8");
 					$(".st_left .adr_bar").css("background", "linear-gradient(to left, #3498db, #5788a8)");
 					$(".st_right .adr_bar").css("background", "linear-gradient(to left, #c19511, #f7bf16)");
-					$("#team_1 #team_name").html(team_ct.name);
+					$("#team_1 #team_name").html(ctname);
 					$("#team_1 #team_score").html(team_ct.score);
-					$("#team_2 #team_name").html(team_t.name);
+					$("#team_2 #team_name").html(tname);
 					$("#team_2 #team_score").html(team_t.score);
 				} else {
-					$(".round_team_2_name").html(team_ct.name);
-					$(".round_team_1_name").html(team_t.name);
+					$(".round_team_2_name").html(ctname);
+					$(".round_team_1_name").html(tname);
 					$(".round_team_2_name").css("color", "#5788a8");
 					$(".round_team_1_name").css("color", "#c19511");
 					$("#team_1").css("color", "#c19511");
 					$("#team_2").css("color", "#5788a8");
 					$(".st_right .adr_bar").css("background", "linear-gradient(to left, #3498db, #5788a8)");
 					$(".st_left .adr_bar").css("background", "linear-gradient(to left, #c19511, #f7bf16)");
-					$("#team_2 #team_name").html(team_ct.name);
+					$("#team_2 #team_name").html(ctname);
 					$("#team_2 #team_score").html(team_ct.score);
-					$("#team_1 #team_name").html(team_t.name);
+					$("#team_1 #team_name").html(tname);
 					$("#team_1 #team_score").html(team_t.score);
 				}
 				team_money.sec += stats.money;
@@ -640,15 +655,15 @@ var obs_stats = observed.getStats();
 				if($(".money").css("opacity") == 0){
 					$(".money").fadeTo(1000, 1);
 					$(".stat_t").fadeTo(1000, 1);
-					$("#stats-container").fadeTo(1000, 1);
-					$("#player-container").fadeTo(1000, 0);
+					//$("#stats-container").fadeTo(1000, 1);
+					//$("#player-container").fadeTo(1000, 0);
 				}
 			} else {
 				if($(".money").css("opacity") == 1){
 					$(".money").fadeTo(1000, 0);
 					$(".stat_t").fadeTo(1000, 0);
-					$("#stats-container").fadeTo(1000, 0);
-					$("#player-container").fadeTo(1000, 1);
+					//$("#stats-container").fadeTo(1000, 0);
+					//$("#player-container").fadeTo(1000, 1);
 				}
 			}
 			
@@ -656,8 +671,8 @@ var obs_stats = observed.getStats();
 			if($(".money").css("opacity") == 1){
 				$(".money").fadeTo(1000, 0);
 				$(".stat_t").fadeTo(1000, 0);
-				$("#stats-container").fadeTo(1000, 0);
-				$("#player-container").fadeTo(1000, 1);
+				//$("#stats-container").fadeTo(1000, 0);
+				//$("#player-container").fadeTo(1000, 1);
 			}
 		}
 		if(data.info.phase_countdowns.phase_ends_in){
