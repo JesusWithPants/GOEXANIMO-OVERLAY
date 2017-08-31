@@ -921,7 +921,7 @@ padding-right:10px;
 	width: auto;
 	margin: auto;
 	margin-top: 2px;
-	margin-left:2px;
+	/*margin-left:2px;*/
 }
 
 .hp_bar>.bar_weapon>img.invert {
@@ -1129,4 +1129,35 @@ padding-right:10px;
 	width: 200px;
 	/*transform: skewX(40deg);*/
 }
-	
+#win_call{
+    position: fixed;
+    top: 300px;
+    width: 100%;
+    text-align: center;
+
+}
+#round_win_text{
+    display:inline-block;
+    width: 90%;
+    max-width: 700px;  
+    min-height: 60px;
+	font-size: 45px;
+	text-shadow: 0 0 10px black;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}	
+#bomb_call{
+    position: fixed;
+    top: 800px;
+    width: 100%;
+    text-align: center;
+
+}
+#bomb_defuse_text{
+    display:inline-block;
+    width: 90%;
+    max-width: 600px;  
+    max-height: 30px;
+	font-size: 20px;
+	text-shadow: 0 0 10px black;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}	

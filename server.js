@@ -15,51 +15,51 @@ var icons = {
 	smokegrenade: "files/img/smoke.png",
 	incgrenade: "files/img/ctmolotv.png",
 
-    cz75a: "http://vignette3.wikia.nocookie.net/cswikia/images/c/cf/C75a_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    deagle: "http://vignette2.wikia.nocookie.net/cswikia/images/7/7d/Deagle_hud_go.png/revision/latest/scale-to-width-down/400",
-    elite: "http://vignette2.wikia.nocookie.net/cswikia/images/8/82/Elite_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    fiveseven: "http://vignette2.wikia.nocookie.net/cswikia/images/9/9c/Fiveseven_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    glock: "http://vignette2.wikia.nocookie.net/cswikia/images/3/33/Glock18_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    p250: "http://vignette2.wikia.nocookie.net/cswikia/images/5/57/P250_hud.png/revision/latest/scale-to-width-down/400",
-    hkp2000: "http://vignette1.wikia.nocookie.net/cswikia/images/6/67/Hkp2000_hud.png/revision/latest/scale-to-width-down/400",
-    tec9: "http://vignette3.wikia.nocookie.net/cswikia/images/5/55/Tec9_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    usp_silencer: "http://vignette2.wikia.nocookie.net/cswikia/images/7/73/Usps_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    mag7: "http://vignette2.wikia.nocookie.net/cswikia/images/2/2e/Mag7_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    revolver: "http://vignette2.wikia.nocookie.net/cswikia/images/7/7d/Deagle_hud_go.png/revision/latest/scale-to-width-down/400",
-    nova: "http://vignette4.wikia.nocookie.net/cswikia/images/c/c8/Nova_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    sawedoff: "http://vignette1.wikia.nocookie.net/cswikia/images/9/94/Sawedoff_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    xm1014: "http://vignette2.wikia.nocookie.net/cswikia/images/a/ad/Xm1014_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    mac10: "http://vignette2.wikia.nocookie.net/cswikia/images/f/f7/Mac10_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    mp7: "http://vignette4.wikia.nocookie.net/cswikia/images/8/8d/Mp7_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    mp9: "http://vignette2.wikia.nocookie.net/cswikia/images/1/14/Mp9_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    p90: "http://vignette3.wikia.nocookie.net/cswikia/images/b/bd/P90_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    bizon: "http://vignette1.wikia.nocookie.net/cswikia/images/d/d5/Bizon_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    ump45: "http://vignette3.wikia.nocookie.net/cswikia/images/c/c4/Ump45_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    ak47: "http://vignette1.wikia.nocookie.net/cswikia/images/7/76/Ak47_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    aug: "http://vignette2.wikia.nocookie.net/cswikia/images/6/6f/Aug_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    famas: "http://vignette2.wikia.nocookie.net/cswikia/images/8/8f/Famas_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    galilar: "http://vignette1.wikia.nocookie.net/cswikia/images/4/4a/Galilar_hud.png/revision/latest/scale-to-width-down/400",
-    m4a1_silencer: "http://vignette3.wikia.nocookie.net/cswikia/images/4/4f/M4a1s_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    m4a1: "http://vignette2.wikia.nocookie.net/cswikia/images/d/d9/M4a4_hud.png/revision/latest/scale-to-width-down/400",
-    sg556: "http://vignette1.wikia.nocookie.net/cswikia/images/9/9b/Sg556_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    awp: "http://vignette3.wikia.nocookie.net/cswikia/images/e/eb/Awp_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    g3sg1: "http://vignette4.wikia.nocookie.net/cswikia/images/4/4a/G3sg1_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    ssg08: "http://vignette4.wikia.nocookie.net/cswikia/images/3/3c/Ssg08_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    scar20: "http://vignette4.wikia.nocookie.net/cswikia/images/c/c9/Scar20_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    m249: "http://vignette2.wikia.nocookie.net/cswikia/images/e/ea/M249_hud_csgo.png/revision/latest/scale-to-width-down/400",
-    negev: "http://vignette2.wikia.nocookie.net/cswikia/images/b/be/Negev_hud.png/revision/latest/scale-to-width-down/400",
-	knife: "http://vignette2.wikia.nocookie.net/cswikia/images/4/4b/Knife_ct_hud_outline_csgo.png/revision/latest/scale-to-width-down/400",
-   	knife_t: "http://vignette3.wikia.nocookie.net/cswikia/images/2/28/Knife_t_hud_outline_csgo.png/revision/latest/scale-to-width-down/400",
-   	knife_bayonet: "http://vignette2.wikia.nocookie.net/cswikia/images/2/28/Csgo_knife_Bayonet.png/revision/latest/scale-to-width-down/400",
-    knife_butterfly: "http://vignette2.wikia.nocookie.net/cswikia/images/d/df/Knife_butterfly_hud_outline_csgo.png/revision/latest/scale-to-width-down/400",
-    knife_falchion: "http://vignette4.wikia.nocookie.net/cswikia/images/7/7e/Falchion_Knife_hud_outline_csgo.png/revision/latest/scale-to-width-down/400",
-    knife_flip: "http://vignette3.wikia.nocookie.net/cswikia/images/a/a4/Knife_flip_hud_outline_csgo.png/revision/latest/scale-to-width-down/400",
-    knife_gut: "http://vignette2.wikia.nocookie.net/cswikia/images/f/ff/Knife_gut_hud_outline_csgo.png/revision/latest/scale-to-width-down/400",
-    knife_tactical: "http://vignette2.wikia.nocookie.net/cswikia/images/5/53/Knife_hustman_hud_outline_csgo.png/revision/latest/scale-to-width-down/400",
-    knife_karambit: "http://vignette4.wikia.nocookie.net/cswikia/images/5/57/Knife_karambit_hud_outline_csgo.png/revision/latest/scale-to-width-down/400",
-    knife_m9_bayonet: "http://vignette4.wikia.nocookie.net/cswikia/images/d/d3/Csgo_knife_M9_Bayonet.png/revision/latest/scale-to-width-down/400",
-    knife_shadow_dagger: "http://vignette4.wikia.nocookie.net/cswikia/images/f/f1/Knife_push_hud_outline_csgo.png/revision/latest/scale-to-width-down/400",
-    knife_survival_bowie: "https://vignette4.wikia.nocookie.net/cswikia/images/8/8c/Survival_bowie_hud_outline.png/revision/latest/scale-to-width-down/400"
+    cz75a: "files/img/C75a_hud_csgo.png",
+    deagle: "files/img/Deagle_hud_go.png",
+    elite: "files/img/Elite_hud_csgo.png",
+    fiveseven: "files/img/Fiveseven_hud_csgo.png",
+    glock: "files/img/Glock18_hud_csgo.png",
+    p250: "files/img/P250_hud.png",
+    hkp2000: "files/img/Hkp2000_hud.png",
+    tec9: "files/img/Tec9_hud_csgo.png",
+    usp_silencer: "files/img/Usps_hud_csgo.png",
+    mag7: "files/img/Mag7_hud_csgo.png",
+    revolver: "files/img/Deagle_hud_go.png",
+    nova: "files/img/Nova_hud_csgo.png",
+    sawedoff: "files/img/Sawedoff_hud_csgo.png",
+    xm1014: "files/img/Xm1014_hud_csgo.png",
+    mac10: "files/img/Mac10_hud_csgo.png",
+    mp7: "files/img/Mp7_hud_csgo.png",
+    mp9: "files/img/Mp9_hud_csgo.png",
+    p90: "files/img/P90_hud_csgo.png",
+    bizon: "files/img/Bizon_hud_csgo.png",
+    ump45: "files/img/Ump45_hud_csgo.png",
+    ak47: "files/img/Ak47_hud_csgo.png",
+    aug: "files/img/Aug_hud_csgo.png",
+    famas: "files/img/Famas_hud_csgo.png",
+    galilar: "files/img/Galilar_hud.png",
+    m4a1_silencer: "files/img/M4a1s_hud_csgo.png",
+    m4a1: "files/img/M4a4_hud.png",
+    sg556: "files/img/Sg556_hud_csgo.png",
+    awp: "files/img/Awp_hud_csgo.png",
+    g3sg1: "files/img/G3sg1_hud_csgo.png",
+    ssg08: "files/img/Ssg08_hud_csgo.png",
+    scar20: "files/img/Scar20_hud_csgo.png",
+    m249: "files/img/M249_hud_csgo.png",
+    negev: "files/img/Negev_hud.png",
+	knife: "files/img/Knife_ct_hud_outline_csgo.png",
+   	knife_t: "files/img/Knife_t_hud_outline_csgo.png",
+   	knife_bayonet: "files/img/Csgo_knife_Bayonet.png",
+    knife_butterfly: "files/img/Knife_butterfly_hud_outline_csgo.png",
+    knife_falchion: "files/img/Falchion_Knife_hud_outline_csgo.png",
+    knife_flip: "files/img/Knife_flip_hud_outline_csgo.png",
+    knife_gut: "files/img/Knife_gut_hud_outline_csgo.png",
+    knife_tactical: "files/img/Knife_hustman_hud_outline_csgo.png",
+    knife_karambit: "files/img/Knife_karambit_hud_outline_csgo.png",
+    knife_m9_bayonet: "files/img/Csgo_knife_M9_Bayonet.png",
+    knife_shadow_dagger: "files/img/Knife_push_hud_outline_csgo.png",
+    knife_survival_bowie: "files/img/Survival_bowie_hud_outline.png"
 
 }
 var win = gui.Window.get();
@@ -639,7 +639,7 @@ function updatePage(data) {
 
 	//PHASES
 	if(map.phase == "live"){
-		givedrops = true;
+		givedrops = false;
 	}
 	if(data.info.phase_countdowns){
 		if(data.info.phase_countdowns.phase == "live" || data.info.phase_countdowns.phase == "warmup"){
@@ -696,8 +696,75 @@ function updatePage(data) {
 			}
 			$("#time_counter").html(count_minute + ":" + count_seconds);
 		}
-	}
+	
+	
+//Teamname from data
+	if(team_ct.name===undefined){
+	var ctname="Counter-Terrorists";}
+	else{ ctname=team_ct.name;}
+			
+	if(team_t.name===undefined){
+	var tname="Terrorists";}
+	else{ tname=team_t.name;}
 
+	//Which team wins the round	
+	if(data.info.phase_countdowns.phase == "over"){
+		if(data.info.round.win_team == "CT"){
+		$("#round_win_text").html(ctname.toUpperCase() + " WIN!");
+		$("#round_win_text").css("color", "#5788a8");
+		$("#round_win_text").css("background" , "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))");}
+		else if (data.info.round.win_team == "T") {
+		$("#round_win_text").html(tname.toUpperCase() + " WIN!");
+		$("#round_win_text").css("color", "#c19511");
+		$("#round_win_text").css("background" , "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))");}
+	}
+	else {$("#round_win_text").html("");
+		  $("#round_win_text").css("background" , "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0))");}
+	
+	if(data.info.phase_countdowns.phase == "over"){
+		if(data.info.phase_countdowns.phase_ends_in > 1){
+			if($("#win_call").css("opacity") == 0){
+			$("#win_call").fadeTo(1000, 1);}
+		}
+		else if(data.info.phase_countdowns.phase_ends_in == 0) { 
+		if($("#win_call").css("opacity") == 1){
+			$("#win_call").fadeTo(2000, 0);
+			}
+		}
+	}	
+//Bomb plant or defuse texts (I HAVE NO IDEA WHY IT DOESN'T WORK!)
+	if(data.info.phase_countdowns.phase == "bomb"){
+		$("#bomb_defuse_text").html(tname.toUpperCase() + " HAS PLANTED THE BOMB");
+		$("#bomb_defuse_text").css("color", "#FF0000");
+		$("#bomb_defuse_text").css("background" , "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))");
+	}
+	else if(data.info.phase_countdowns.phase == "defuse"){
+		$("#bomb_defuse_text").html("DEFUSING");
+		$("#bomb_defuse_text").css("color", "#1E90FF");
+		$("#bomb_defuse_text").css("background" , "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))");
+	}
+	else {$("#bomb_defuse_text").html("");
+		  $("#bomb_defuse_text").css("background" , "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0))");}		 
+	
+	if(data.info.phase_countdowns.phase == "bomb"){
+		if(data.info.phase_countdowns.phase_ends_in > 35){
+			if($("#bomb_call").css("opacity") == 0){
+			$("#bomb_call").fadeTo(1000, 1);}
+		}
+		else if(data.info.phase_countdowns.phase_ends_in <= 35) { 
+			$("#bomb_call").fadeTo(2000, 0);
+		}
+	}	
+	if(data.info.phase_countdowns.phase == "defuse"){
+		if(data.info.phase_countdowns.phase_ends_in > 0){
+			if($("#bomb_call").css("opacity") == 0){
+			$("#bomb_call").fadeTo(1000, 1);}
+		}
+		else if(data.info.phase_countdowns.phase_ends_in <= 0) { 
+			$("#bomb_call").fadeTo(2000, 0);
+		}
+	}		
+	}		 
 	//WIN ICONS
 	if(data.info.round.phase == "over" && last_added[data.info.map.round] !== true){
 		var classes = "";
@@ -742,6 +809,8 @@ function updatePage(data) {
 		$(".fst").remove();
 		$(".snd").remove();
 	}
+	
+	
 
 }
 

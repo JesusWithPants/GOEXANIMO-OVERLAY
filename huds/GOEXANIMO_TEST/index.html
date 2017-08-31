@@ -15,7 +15,7 @@
 				</div>
 				<div id="team_2" class="team_info" style="height: 100%;">
 					<div id="team_score">0</div>
-					<div id="team_logo"><div id="team_flag"></div><img src="ok.png" id="team_2_logo"/></div>
+					<div id="team_logo"><div id="team_flag"></div><img id="team_2_logo"/></div>
 
 					<div id="team_name">Team 2</div>
 
@@ -632,7 +632,16 @@
 			<img src="../../sponsors/zowie.png" alt="zowie">
 		</div>
 	</div>
-
+	<div id="win_call">
+		<div id="round_win_text">
+			TEAM WINS!
+		</div>
+	</div>
+	<div id="bomb_call">
+		<div id="bomb_defuse_text">
+			SOMETHING IS PLANTED
+		</div>
+	</div>
 </section>
 
 <script>
@@ -654,6 +663,6 @@
         }
     }
 
-    setInterval(checkPlayerNames, 3000);
+    setInterval(checkPlayerNames, 500);
 
 </script>
