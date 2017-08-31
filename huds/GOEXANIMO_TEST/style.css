@@ -816,6 +816,10 @@ padding-right:10px;
 	width: 120px;
 }
 
+.bar_username {
+	width: 80% !important;
+}
+
 #team-ct>.player>.bar1>.hp_bar>.bar_weapon,
 #team-ct>.player>.bottom_bar>.equip_bar>.bar_weapon {
 	float: right;
