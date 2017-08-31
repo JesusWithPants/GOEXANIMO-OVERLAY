@@ -299,9 +299,9 @@ var changed = false;
 
 function updatePage(data) {
 	var observed = data.getObserved();
-var obs_stats = observed.getStats();
+	//var obs_stats = observed.getStats();
 	var phase = data.phase();
-	if(observed.steamid == 1 || data.info.player.activity != "playing"){
+	if(observed.steamid == 1){
 		$("#player-container").css("opacity", "0");
 	} else {
 		var obs_stats = observed.getStats();
@@ -544,9 +544,9 @@ var obs_stats = observed.getStats();
 			$("#team-" + side + " #player" + obs_sl + " .bottom_bar .stat_t .kills").html(stats.kills);
 			$("#team-" + side + " #player" + obs_sl + " .bottom_bar .stat_t .assists").html(stats.assists);
 			$("#team-" + side + " #player" + obs_sl + " .bottom_bar .stat_t .deaths").html(stats.deaths);
-			if(stats.round_kills > 0){
-				$("#team-" + side + " #player" + obs_sl + " .bottom_bar .equip_bar #weapon_icon").prepend("<img src=\"death.png\"  style=\"float:" + ((side == "ct") ? "left" : "right") + "; height:60%; margin-top:5px;\"/><div style=\"text-shadow: 0 0 10px black; float:" + ((side == "ct") ? "left" : "right") + ";\">" + stats.round_kills + "</div>");
-			}
+			//if(stats.round_kills > 0){
+			//	$("#team-" + side + " #player" + obs_sl + " .bottom_bar .equip_bar #weapon_icon").prepend("<img src=\"death.png\"  style=\"float:" + ((side == "ct") ? "left" : "right") + "; height:60%; margin-top:5px;\"/><div style=\"text-shadow: 0 0 10px black; float:" + ((side == "ct") ? "left" : "right") + ";\">" + stats.round_kills + "</div>");
+			//}
 
 			//ITEMS
 			$("#team-" + side + " #player" + obs_sl + " .bottom_bar .equip_bar .hp_el").html((stats.helmet == true) ? "<img src=\"helmet.png\" />" : ((stats.armor >0) ? "<img src=\"armor.png\" />" : ""));
@@ -555,6 +555,10 @@ var obs_stats = observed.getStats();
 
 			$("#team-" + side + " #player" + obs_sl + " .bar1 .hp_bar #weapon_icon").html("");
 			$("#team-" + side + " #player" + obs_sl + " .bottom_bar .equip_bar #weapon_icon").html("");
+			
+			if(stats.round_kills > 0){
+               			$("#team-" + side + " #player" + obs_sl + " .bottom_bar .equip_bar #weapon_icon").prepend("<img src=\"death.png\"  style=\"float:" + ((side == "ct") ? "left" : "right") + "; height:60%; margin-top:5px;\"/><div style=\"text-shadow: 0 0 10px black; float:" + ((side == "ct") ? "left" : "right") + ";\">" + stats.round_kills + "</div>");
+            		}
 			for(var key in weapons){
 				var weapon = weapons[key];
 				if (weapon.type == "Grenade") {
