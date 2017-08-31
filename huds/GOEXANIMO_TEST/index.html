@@ -636,8 +636,13 @@
 </section>
 
 <script>
-	var playerName = document.getElementsByClassName('bar_username');
-	if (playerName.length > 10) {
-	    playerName.style.fontSize = "80%";
-	} // to do: make a proper script by using the given idea
+    var nameCollection = document.getElementsByClassName('bar_username');
+
+    for (i = 0; i <= 9; i++) {
+        if (nameCollection[i].innerText.length > 10) {
+            nameCollection[i].style.fontSize = ".4em";
+            nameCollection[i].style.marginTop = "3%";
+        }
+    }
+    // TODO: Make it somewhat dynamic but that's a good start right there if you kinda hate JS and find a better place to put this.
 </script>
