@@ -732,9 +732,9 @@ function updatePage(data) {
 			}
 		}
 	}	
-//Bomb plant or defuse texts (I HAVE NO IDEA WHY IT DOESN'T WORK!)
+//Bomb plant or defuse texts (WORKS KINDA!)
 	if(data.info.phase_countdowns.phase == "bomb"){
-		$("#bomb_defuse_text").html(tname.toUpperCase() + " HAS PLANTED THE BOMB");
+		$("#bomb_defuse_text").html("BOMB HAS BEEN PLANTED!");
 		$("#bomb_defuse_text").css("color", "#FF0000");
 		$("#bomb_defuse_text").css("background" , "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))");
 	}
@@ -747,11 +747,11 @@ function updatePage(data) {
 		  $("#bomb_defuse_text").css("background" , "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0))");}		 
 	
 	if(data.info.phase_countdowns.phase == "bomb"){
-		if(data.info.phase_countdowns.phase_ends_in > 35){
+		if(data.info.phase_countdowns.phase_ends_in > 37){
 			if($("#bomb_call").css("opacity") == 0){
 			$("#bomb_call").fadeTo(1000, 1);}
 		}
-		else if(data.info.phase_countdowns.phase_ends_in <= 35) { 
+		else if(data.info.phase_countdowns.phase_ends_in <= 37) { 
 			$("#bomb_call").fadeTo(2000, 0);
 		}
 	}	
