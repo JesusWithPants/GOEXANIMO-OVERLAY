@@ -731,14 +731,15 @@ function updatePage(data) {
 			$("#win_call").fadeTo(2000, 0);
 			}
 		}
-	}	
+	}
+	var phase = data.phase();
 //Bomb plant or defuse texts (WORKS KINDA!)
-	if(data.info.phase_countdowns.phase == "bomb"){
+	if(phase.phase == "bomb"){
 		$("#bomb_defuse_text").html("BOMB HAS BEEN PLANTED!");
 		$("#bomb_defuse_text").css("color", "#FF0000");
 		$("#bomb_defuse_text").css("background" , "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))");
 	}
-	else if(data.info.phase_countdowns.phase == "defuse"){
+	else if(phase.phase == "defuse"){
 		$("#bomb_defuse_text").html("DEFUSING");
 		$("#bomb_defuse_text").css("color", "#1E90FF");
 		$("#bomb_defuse_text").css("background" , "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))");
@@ -746,22 +747,22 @@ function updatePage(data) {
 	else {$("#bomb_defuse_text").html("");
 		  $("#bomb_defuse_text").css("background" , "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0))");}		 
 	
-	if(data.info.phase_countdowns.phase == "bomb"){
-		if(data.info.phase_countdowns.phase_ends_in > 37){
+	if(phase.phase == "bomb"){
+		if(count_seconds > 37){
 			if($("#bomb_call").css("opacity") == 0){
 			$("#bomb_call").fadeTo(1000, 1);}
 		}
-		else if(data.info.phase_countdowns.phase_ends_in <= 37) { 
+		else if(count_seconds <= 37) { 
 			$("#bomb_call").fadeTo(2000, 0);
 		}
-	}	
-	if(data.info.phase_countdowns.phase == "defuse"){
-		if(data.info.phase_countdowns.phase_ends_in > 0){
+	}
+	if(phase.phase == "defuse"){
+		if(count_seconds > 0){
 			if($("#bomb_call").css("opacity") == 0){
 			$("#bomb_call").fadeTo(1000, 1);}
 		}
-		else if(data.info.phase_countdowns.phase_ends_in <= 0) { 
-			$("#bomb_call").fadeTo(2000, 0);
+		else if(count_seconds <= 0) { 
+			$("#bomb_call").fadeTo(1000, 0);
 		}
 	}		
 	}		 
