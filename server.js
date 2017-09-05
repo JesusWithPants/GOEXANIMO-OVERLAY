@@ -321,24 +321,35 @@ function updatePage(data) {
 	var team_t = data.getT();
 
 	var tname = [];
-	var tscore = []
+	var tscore = [];
+	var ot_count = 0;	
 	tname.ct = team_ct.name;
 	tname.t = team_t.name;
 	tscore.ct = team_ct.score;
 	tscore.t = team_t.score;
 
 	$("#round_counter").html("Round " + round_now + " / 30");
-	
+
 	if(round_now > 30){
-		var ot_count = 1;
-			if ((!isNaN((round_now - 30) % 6)) && (round_now - 30) % 2 == 0) {
-				ot_count = (round_now - 30) / 6;
+
+			if (((round_now - 30) % 7) == 0) { //round 1/6
+				ot_count = (round_now - 30)/7;
+			} else if(((round_now - 30) % 8) == 0) { //round 2/6
+				ot_count = (round_now - 30)/8;
+			} else if(((round_now - 30) % 9) == 0) { //round 3/6
+				ot_count = (round_now - 30)/9;
+			} else if(((round_now - 30) % 10) == 0) { //round 4/6
+				ot_count = (round_now - 30)/10;
+			} else if(((round_now - 30) % 11) == 0) { //round 5/6
+				ot_count = (round_now - 30)/11;
+			} else if(((round_now - 30) % 12) == 0) { //round 6/6
+				ot_count = (round_now - 30)/12;
 			}
-		
-		var ot_round_now = round_now - (30 + (6* ot_count));
-		$("#round_counter").html("OT "+ ot_count+" ( " + ot_round_now + " / 6 )");
+	var ot_round_now = round_now - (30 + (6* (ot_count) ));	
+	$("#round_counter").html("OT "+ (ot_count + 1) +" ( " + ot_round_now + " / 6 )");	
 	}
 
+		
 	//OBSERVED PLAYER
 		
 	if(observed.steamid != 1){
@@ -696,7 +707,8 @@ function updatePage(data) {
 				//$("#stats-container").fadeTo(1000, 0);
 				//$("#player-container").fadeTo(1000, 1);
 			}
-		}
+		}	
+		
 		if(data.info.phase_countdowns.phase_ends_in){
 			var countdown = Math.ceil(data.info.phase_countdowns.phase_ends_in);
 			var count_minute = Math.floor(countdown/60);
@@ -742,40 +754,56 @@ function updatePage(data) {
 			}
 		}
 	}
-	var phase = data.phase();
-//Bomb plant or defuse texts (WORKS KINDA!)
-	if(phase.phase == "bomb"){
+	//Bomb plant or defuse texts (Not Working)
+	if(data.info.phase_countdowns.phase == "bomb"){
 		$("#bomb_defuse_text").html("BOMB HAS BEEN PLANTED!");
 		$("#bomb_defuse_text").css("color", "#FF0000");
 		$("#bomb_defuse_text").css("background" , "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))");
 	}
-	else if(phase.phase == "defuse"){
+	else if(data.info.phase_countdowns.phase == "defuse"){
 		$("#bomb_defuse_text").html("DEFUSING");
 		$("#bomb_defuse_text").css("color", "#1E90FF");
-		$("#bomb_defuse_text").css("background" , "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0))");
+		$("#bomb_defuse_text").css("background" , "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0))");
 	}
 	else {$("#bomb_defuse_text").html("");
 		  $("#bomb_defuse_text").css("background" , "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0))");}		 
-	
-	if(phase.phase == "bomb"){
-		if(count_seconds > 37){
-			if($("#bomb_call").css("opacity") == 0){
-			$("#bomb_call").fadeTo(1000, 1);}
+		
+		
+		if(data.info.phase_countdowns.phase == "bomb"){
+			if(data.info.phase_countdowns.phase_ends_in > 37){
+				if($("#bomb_call").css("opacity") == 0){
+					$("#bomb_call").fadeTo(500, 1);
+				}
+			} else {
+				if($("#bomb_call").css("opacity") == 1){
+					$("#bomb_call").fadeTo(1000, 0);
+				}
+			}
+			
+		} else {
+			if($("#bomb_call").css("opacity") == 1){
+				$("#bomb_call").fadeTo(1000, 0);
+			}
 		}
-		else if(count_seconds <= 37) { 
-			$("#bomb_call").fadeTo(2000, 0);
-		}
-	}
-	if(phase.phase == "defuse"){
-		if(count_seconds > 0){
-			if($("#bomb_call").css("opacity") == 0){
-			$("#bomb_call").fadeTo(1000, 1);}
-		}
-		else if(count_seconds <= 0) { 
-			$("#bomb_call").fadeTo(1000, 0);
-		}
-	}		
-	}		 
+
+		if(data.info.phase_countdowns.phase == "defuse"){
+			if(data.info.phase_countdowns.phase_ends_in > 0){
+				if($("#bomb_call").css("opacity") == 0){
+					$("#bomb_call").fadeTo(500, 1);
+				}
+			} else {
+				if($("#bomb_call").css("opacity") == 1){
+					$("#bomb_call").fadeTo(1000, 0);
+				}
+			}
+			
+		} /*else {
+			if($("#bomb_call").css("opacity") == 1){
+				$("#bomb_call").fadeTo(1000, 0);
+			}
+		}*/
+		  
+		}		 
 	//WIN ICONS
 	if(data.info.round.phase == "over" && last_added[data.info.map.round] !== true){
 		var classes = "";
