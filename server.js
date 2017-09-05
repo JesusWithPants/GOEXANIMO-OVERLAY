@@ -328,6 +328,16 @@ function updatePage(data) {
 	tscore.t = team_t.score;
 
 	$("#round_counter").html("Round " + round_now + " / 30");
+	
+	if(round_now > 30){
+		var ot_count = 1;
+			if ((!isNaN((round_now - 30) % 6)) && (round_now - 30) % 2 == 0) {
+				ot_count = (round_now - 30) / 6;
+			}
+		
+		var ot_round_now = round_now - (30 + (6* ot_count));
+		$("#round_counter").html("OT "+ ot_count+" ( " + ot_round_now + " / 6 )");
+	}
 
 	//OBSERVED PLAYER
 		
