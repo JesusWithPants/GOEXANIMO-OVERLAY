@@ -610,6 +610,10 @@ padding-right:10px;
 	right: 40%;
 }
 
+#weapon1_icon {
+
+}
+
 #weapon_flashbang {
 	background-image: url("weapon_flashbang.png");
 	filter: invert(100%);
@@ -896,6 +900,8 @@ padding-right:10px;
 
 .bar_weapon>.invert.checked {
 	filter: invert(100%);
+	width: 50%;
+	height: 50%;
 }
 
 .equip_bar>.moneys {
