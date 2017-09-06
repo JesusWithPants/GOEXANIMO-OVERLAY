@@ -125,13 +125,13 @@ body {
 	margin-top: 18px;
 }
 
-.adr_bar.st_right {
+/*.adr_bar.st_right {
 	background: linear-gradient(to right, #3498db, #5788a8);
 }
 
 .adr_bar.st_left {
 	background: linear-gradient(to right, #c19511, #f7bf16);
-}
+}*/
 
 #firstcol {
 	position: absolute;
@@ -269,7 +269,7 @@ body {
 #stats-container {
 	position: fixed;
 	bottom: 0px;
-	background: rgba(0, 0, 0, 0.5);
+	/*background: rgba(0, 0, 0, 0.5);*/
 	font-family: 'Saira Semi Condensed', sans-serif;
 	left: 50%;
 	margin-left: -550px;
@@ -487,12 +487,12 @@ body {
 	background-color: red;
 	margin-top: 18px;
 }
-.adr_bar.st_right{
+/*.adr_bar.st_right{
 	background: linear-gradient(to right, #3498db, #5788a8);
 }
 .adr_bar.st_left{
 	background: linear-gradient(to right, #c19511, #f7bf16);
-}
+}*/
 
 #firstcol {
 	position: absolute;
@@ -549,7 +549,7 @@ body {
 #stats-container {
 	position: fixed;
 	bottom: 0px;
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5));
+	/*background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5));*/
 	font-family: 'Saira Semi Condensed', sans-serif;
 	left: 50%;
 	margin-left: -550px;
@@ -816,9 +816,9 @@ padding-right:10px;
 	width: 120px;
 }
 
-.bar_username {
+/*.bar_username {
 	width: 80% !important;
-}
+}*/
 
 #team-ct>.player>.bar1>.hp_bar>.bar_weapon,
 #team-ct>.player>.bottom_bar>.equip_bar>.bar_weapon {

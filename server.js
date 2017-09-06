@@ -688,15 +688,15 @@ function updatePage(data) {
 				if($(".money").css("opacity") == 0){
 					$(".money").fadeTo(1000, 1);
 					$(".stat_t").fadeTo(1000, 1);
-					//$("#stats-container").fadeTo(1000, 1);
-					//$("#player-container").fadeTo(1000, 0);
+					$("#stats-container").fadeTo(1000, 1);
+					$("#sponsors_bg").fadeTo(500, 0);
 				}
 			} else {
 				if($(".money").css("opacity") == 1){
 					$(".money").fadeTo(1000, 0);
 					$(".stat_t").fadeTo(1000, 0);
-					//$("#stats-container").fadeTo(1000, 0);
-					//$("#player-container").fadeTo(1000, 1);
+					$("#stats-container").fadeTo(1000, 0);
+					$("#sponsors_bg").fadeTo(1000, 1);
 				}
 			}
 			
@@ -704,8 +704,8 @@ function updatePage(data) {
 			if($(".money").css("opacity") == 1){
 				$(".money").fadeTo(1000, 0);
 				$(".stat_t").fadeTo(1000, 0);
-				//$("#stats-container").fadeTo(1000, 0);
-				//$("#player-container").fadeTo(1000, 1);
+				$("#stats-container").fadeTo(1000, 0);
+				$("#sponsors_bg").fadeTo(1000, 1);
 			}
 		}	
 		
