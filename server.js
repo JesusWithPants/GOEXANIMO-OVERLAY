@@ -588,7 +588,7 @@ function updatePage(data) {
 						addclass = "checked";
 					}
 					for(var x = 0; x < weapon.ammo_reserve; x++){
-						$("#team-" + side + " #player" + obs_sl + " .bottom_bar .equip_bar #weapon_icon").html().append("<img src='" + weapon.name + ".png' class=\"invert " + addclass + "\" />");
+						$("#team-" + side + " #player" + obs_sl + " .bottom_bar .equip_bar #weapon_icon").append("<img src='" + weapon.name + ".png' class=\"invert " + addclass + "\" />");
 					}
 
 				} else if(weapon.type == "Pistol"){
