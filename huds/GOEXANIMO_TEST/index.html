@@ -363,7 +363,7 @@
 			<div class="bar1">
 				<div class="hp_bar">
 					<div class="hp_el" id="hp_p">100</div>
-					<div class="bar_username" id="bar_username">undefined</div>
+					<div class="bar_username" id="bar_username">jdkritosddgsdfgdpajv</div>
 					<div class="bar_weapon ct" id="weapon_icon"></div>
 				</div>
 				<div class="stat_t">
@@ -647,18 +647,23 @@
 <script>
 	var checkPlayerNames = function() {
         var nameCollection = document.getElementsByClassName('bar_username');
+	
+        for (var i = 0; i <= 9; i++) {
+			
+			
+			var element = nameCollection.item(i);
+			
+			
+            if (element.innerText.length > 7) { // Optimal breakpoint after which player name looks fucked
+                element.style.fontSize = "80%";
+                element.style.marginTop = "2%";
 
-        for (i = 0; i <= 9; i++) {
-            if (nameCollection[i].innerText.length > 12) { // Optimal breakpoint after which player name looks fucked
-                nameCollection[i].style.fontSize = "80%";
-                nameCollection[i].style.marginTop = "2%";
-
-                return;
+                continue;
             }
 
-            if (nameCollection[i].innerText.length < 13) {
-                nameCollection[i].style.fontSize = "100%";
-                nameCollection[i].style.marginTop = "inherit";
+            if (element.innerText.length < 8) {
+                element.style.fontSize = "100%";
+                element.style.marginTop = "inherit";
 			}
         }
     }

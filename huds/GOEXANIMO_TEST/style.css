@@ -807,6 +807,8 @@ padding-right:10px;
 	float: left;
 	margin-left: 15px;
 	width: 120px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 #team-t>.player>.bar1>.hp_bar>.bar_username {
@@ -814,7 +816,10 @@ padding-right:10px;
 	text-align:right;
 	margin-right: 15px;
 	width: 120px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
+
 
 /*.bar_username {
 	width: 80% !important;

@@ -754,7 +754,7 @@ function updatePage(data) {
 			}
 		}
 	}
-	//Bomb plant or defuse texts (Not Working)
+	//Bomb plant or defuse texts (Now working)
 	if(data.info.phase_countdowns.phase == "bomb"){
 		$("#bomb_defuse_text").html("BOMB HAS BEEN PLANTED!");
 		$("#bomb_defuse_text").css("color", "#FF0000");
