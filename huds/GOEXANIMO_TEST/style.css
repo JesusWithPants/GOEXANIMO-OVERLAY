@@ -604,8 +604,9 @@ padding-right:10px;
 
 #nades {
 	padding-top: 1.1%;
+	padding-left: 2px;
 	height: 100%;
-	width: 15%;
+	width: 20%;
 	float: right;
 	right: 40%;
 }
