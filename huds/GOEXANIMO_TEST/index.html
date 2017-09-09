@@ -671,27 +671,3 @@
     setInterval(checkPlayerNames, 500);
 
 </script>
-<script>
-	var checkPlayerNames = function() {
-        var nameCollection = document.getElementsByClassName('current_nick')
-			
-			
-			var element = nameCollection.name;
-			
-			
-            if (element.innerText.length > 15) { // Optimal breakpoint after which player name looks fucked
-                element.style.fontSize = "80%";
-                ele	ment.style.marginTop = "2%";
-
-                return;
-            }
-
-            if (element.innerText.length < 16) {
-                element.style.fontSize = "100%";
-                element.style.marginTop = "inherit";
-			}
-        }
-
-    setInterval(checkPlayerNames, 500);
-
-</script>
