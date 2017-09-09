@@ -444,12 +444,12 @@ body {
 	overflow: hidden;
 }
 
-#current_nick::before {
+/*#current_nick::before {
 	content: url("polishflag.png");
 	width: 27px;
 	height: 20px;
 	margin-right: 10px;
-}
+}*/
 
 
 #health_armor {
@@ -572,7 +572,7 @@ body {
 
 #stats {
 	float: right;
-	width: 30%;
+	width: 20%;
 }
 
 #health-text {
@@ -603,9 +603,9 @@ padding-right:10px;
 }*/
 
 #nades {
-	padding-top: 10px;
+	padding-top: 1.1%;
 	height: 100%;
-	width: 25%;
+	width: 15%;
 	float: right;
 	right: 40%;
 }
