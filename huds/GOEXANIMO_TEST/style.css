@@ -982,7 +982,7 @@ padding-right:10px;
 	margin-top: 40px;
 	height: 55px;
 	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-	padding-left: 150px;
+	padding-left: 75px;
 }
 
 #sponsors_bg img {
@@ -990,7 +990,7 @@ padding-right:10px;
 	height: 55px;
 	float: left;
 	display: inline;
-	margin-left: 25px;
+	margin-left: 15px;
 }
 
 #sponsors_bg img:first-child {
